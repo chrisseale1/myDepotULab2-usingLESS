@@ -1,0 +1,193 @@
+@import 'variables.less';
+@import 'mixins.less';
+
+//general
+*{
+    font-family: @mainFont;
+}
+
+.text-center{
+    text-align: center;
+}
+.text-left{
+    text-align: left;
+}
+.text-right{
+    text-align: right;
+}
+.space{
+    height: 5em;
+}
+
+//begin navbar
+
+#navbar{
+    height: 3em;
+    background-color: @mainBlue;
+    color: white;
+    position: fixed; 
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+
+    ul.sections{
+        color: white;
+        li{
+            margin-left: 1em;
+            margin-right: 1em;
+            display: inline;
+            text-decoration: none;
+            color: white;
+            a:link{
+                color: white;
+                text-decoration: none;
+            }
+            a:hover{
+                color: white;
+                text-decoration: none;
+                background-color: @hoverColor;
+            }
+            a:visited{
+                color: white;
+            }
+
+        }
+    }
+}
+//end navbar
+
+//begin name section
+#name-section{
+    margin-top: 5em;
+    margin-bottom: -5em;
+    h1.name{
+        font-size: 4.75em;
+        font-family: @nameFont;
+        font-weight: bold;
+        margin-bottom: -0.5em;
+    }
+    h3.title{
+        font-size: 1.55em;
+    }
+}
+
+//begin constrain and rest of main body
+#constrain{
+    margin-left: 10em;
+    margin-right: 10em;
+    .jump{
+        padding-top: -3em;
+        height: 3em;
+    }
+    .subheading{
+        margin-top: 1em;
+        border-top: 0.08em solid @mainBlue;
+        border-bottom: 0.08em solid @mainBlue;
+        background-color: white;
+        clear: both;
+    }
+    .container{
+        margin-left: 3em;
+        margin-right: 3em;
+        p.para-left{
+            float: left;
+            width: 48%;
+        }
+        p.para-right{
+            float: right;
+            width: 48%;
+        }
+        h2.project-title{
+            margin-bottom: -0.5em;
+            font-weight: bold;
+        }
+        p.project-descrip{
+            margin-bottom: 1em;
+        }
+        .date{
+            color: @mainBlue;
+            font-style: italic;
+            margin-left: 2.5em;
+            margin-bottom: -0.6em;
+        }
+        .experience-description{
+            margin-left: 2.5em;
+            margin-bottom: 1.5em;
+        }
+        .form-style{
+            margin-left: 5em;
+            margin-right: 5em;
+            width: 20em;
+            background-color: @mainBlue;
+            display: block;
+            padding: 2em 4em 2em 5em;
+            .roundedCorners;
+            label{
+                color: white;
+                text-transform: uppercase;
+                font-weight: bold;
+                font-size: 1.25em;
+                text-align: left;
+                display: block;
+                margin-bottom: 0.25em;
+            }
+
+            input{
+                font-style: italic;
+                .roundedCorners;
+                border: 0;
+                width: 15em;
+                margin-bottom: 1em;
+                font-size: 1.25em;
+                text-align: left;
+            }
+
+            #message{
+                height: 10em;
+                .roundedCorners;
+                display: block;
+                width: 15em;
+                margin-bottom: 1em;
+            }
+
+            #submit{
+                color: @mainBlue;
+                background-color: white;
+                font-style: normal;
+                font-weight: bold;
+                width: 12.75em;
+                font-size: 1.5em;
+                .roundedCorners;
+                text-align: center;
+            }
+        }
+    }
+}
+
+//end main body, begin footer
+#footer{
+    color: @mainBlue;
+    margin-top: 1em;
+    margin-right: 10em;
+    margin-left: 10em;
+    border-top: 0.15em solid @mainBlue;
+    h4.links{
+        margin-bottom: -1em;
+        text-align: center;
+        a:link{
+            text-decoration: none;
+            color: @mainBlue;
+        }
+         a:visited{
+            color: @mainBlue;
+        }
+        a:hover{
+            color: darkred;
+        }
+    }
+    h6.copyright{
+        text-align: center;
+        color: @mainBlue;
+    }
+}
